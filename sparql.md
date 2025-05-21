@@ -1,8 +1,9 @@
 # SPARQL Basics Cheat Sheet
 SPARQL (SPARQL Protocol and RDF Query Language) is used to query RDF (Resource Description Framework) data.
 
-```sparql
 ## Basic Query Structure
+
+```sparql
 SELECT ?subject ?predicate ?object
 WHERE {
   ?subject ?predicate ?object .
