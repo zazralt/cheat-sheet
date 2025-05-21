@@ -117,8 +117,3 @@ spark.sql("SELECT * FROM people WHERE Age > 25").show()
 ---
 
 Reference: [PySpark API Docs](https://spark.apache.org/docs/latest/api/python/)
-
-```
-
-Let me know if you want a cheat sheet for advanced topics like window functions, UDFs, or working with RDDs.
-```
