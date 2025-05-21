@@ -118,3 +118,92 @@ DESCRIBE <http://example.org/person/Alice>
 ---
 
 Reference: [W3C SPARQL 1.1 Specification](https://www.w3.org/TR/sparql11-query/)
+
+
+# Advanced SPARQL Cheat Sheet
+
+## BIND
+Assigns the result of an expression to a new variable.
+
+```sparql
+SELECT ?name ?upperName
+WHERE {
+  ?person foaf:name ?name .
+  BIND(UCASE(?name) AS ?upperName)
+}
+````
+
+## UNION
+
+Combines results from multiple patterns (logical OR).
+
+```sparql
+SELECT ?person ?info
+WHERE {
+  {
+    ?person foaf:name ?info .
+  } UNION {
+    ?person foaf:mbox ?info .
+  }
+}
+```
+
+## Federated Queries (SERVICE)
+
+Queries remote SPARQL endpoints.
+
+```sparql
+SELECT ?name
+WHERE {
+  SERVICE <http://dbpedia.org/sparql> {
+    ?person foaf:name ?name .
+    ?person dbo:birthPlace dbr:Berlin .
+  }
+}
+```
+
+> ⚠ Note: The remote endpoint must support SPARQL 1.1 and allow federated queries.
+
+## Additional Advanced Constructs
+
+### VALUES
+
+Inline data binding (like a local table of values):
+
+```sparql
+SELECT ?person ?name
+WHERE {
+  VALUES ?person { ex:Alice ex:Bob }
+  ?person foaf:name ?name .
+}
+```
+
+### MINUS
+
+Excludes results matching a pattern:
+
+```sparql
+SELECT ?person
+WHERE {
+  ?person a foaf:Person .
+  MINUS { ?person foaf:mbox ?email . }
+}
+```
+
+### Subqueries
+
+Nested queries for advanced filtering:
+
+```sparql
+SELECT ?person ?age
+WHERE {
+  {
+    SELECT ?person (MAX(?age) AS ?age)
+    WHERE {
+      ?person ex:hasAge ?age .
+    }
+    GROUP BY ?person
+  }
+}
+```
+
