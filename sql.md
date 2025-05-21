@@ -1,5 +1,7 @@
 # SQL Basics Cheat Sheet
 
+Links: [Wiki](https://en.wikipedia.org/wiki/SQL) | [W3C Schools](https://www.w3schools.com/sql/default.asp)
+
 ## Data Querying
 
 ### SELECT
