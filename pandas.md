@@ -1,4 +1,5 @@
 # Pandas Basics Cheat Sheet
+Links: [Wiki](https://en.wikipedia.org/wiki/Pandas_(software)) | [W3C Schools](https://www.w3schools.com/python/pandas/default.asp)
 
 ````python
 import pandas as pd
