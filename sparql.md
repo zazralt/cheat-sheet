@@ -208,3 +208,53 @@ WHERE {
 }
 ```
 
+# SPARQL Functions Cheat Sheet
+
+| Function Type       | Function Name                         | Description |
+|---------------------|----------------------------------------|-------------|
+| **String Functions** | `STR()`                               | Get the string representation of an RDF term |
+|                     | `CONCAT(str1, str2, ...)`              | Concatenate strings |
+|                     | `STRLEN(str)`                          | Length of a string |
+|                     | `UCASE(str)`                           | Convert to uppercase |
+|                     | `LCASE(str)`                           | Convert to lowercase |
+|                     | `SUBSTR(str, start, [length])`         | Extract substring |
+|                     | `REPLACE(str, pattern, replacement)`   | Replace substring using regex |
+|                     | `STRSTARTS(str, prefix)`               | True if str starts with prefix |
+|                     | `STRENDS(str, suffix)`                 | True if str ends with suffix |
+|                     | `CONTAINS(str, substr)`                | True if str contains substr |
+|                     | `ENCODE_FOR_URI(str)`                  | Encode for URI |
+|                     | `STRUUID()` / `UUID()`                 | Generate random UUID |
+| **Numeric Functions** | `ABS(x)`                             | Absolute value |
+|                     | `ROUND(x)`                             | Round to nearest integer |
+|                     | `CEIL(x)`                              | Smallest integer ≥ x |
+|                     | `FLOOR(x)`                             | Largest integer ≤ x |
+|                     | `RAND()`                               | Random float between 0 and 1 |
+| **Date/Time Functions** | `NOW()`                            | Current date and time |
+|                        | `YEAR(dateTime)`                   | Extract year |
+|                        | `MONTH(dateTime)`                  | Extract month |
+|                        | `DAY(dateTime)`                    | Extract day |
+|                        | `HOURS(dateTime)`                  | Extract hour |
+|                        | `MINUTES(dateTime)`                | Extract minutes |
+|                        | `SECONDS(dateTime)`                | Extract seconds |
+|                        | `TIMEZONE(dateTime)`               | Timezone info |
+|                        | `TZ(dateTime)`                     | Timezone as string |
+| **Boolean Functions** | `BOUND(?var)`                        | True if variable is bound |
+|                      | `ISIRI(term)` / `ISURI(term)`        | True if term is an IRI |
+|                      | `ISBLANK(term)`                      | True if term is a blank node |
+|                      | `ISLITERAL(term)`                    | True if term is a literal |
+|                      | `REGEX(str, pattern [, flags])`      | True if string matches regex |
+| **Type Conversion**   | `STR()`                               | Convert to string |
+|                      | `xsd:datatype()`                      | Cast to datatype, e.g. `xsd:integer("123")` |
+| **Hash Functions**    | `MD5(str)`                            | MD5 hash of string |
+|                      | `SHA1(str)` / `SHA256(str)` etc.      | SHA hash of string |
+| **Aggregate Functions** | `COUNT(*)`                         | Count of results |
+|                        | `SUM(expr)`                         | Sum of values |
+|                        | `AVG(expr)`                         | Average value |
+|                        | `MIN(expr)` / `MAX(expr)`           | Minimum or maximum value |
+|                        | `GROUP_CONCAT(expr; separator)`     | Concatenate values in group |
+|                        | `SAMPLE(expr)`                      | Random value from group |
+
+---
+
+Reference: [W3C SPARQL Functions](https://www.w3.org/TR/sparql11-query/#funcs)
+
