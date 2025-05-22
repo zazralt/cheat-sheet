@@ -121,3 +121,76 @@ venv\Scripts\activate         # Windows
 ---
 
 Reference: [Python Docs](https://docs.python.org/3/)
+
+
+# Python Dictionary Cheat Sheet
+
+## Creating a Dictionary
+
+```python
+person = {"name": "Alice", "age": 30}
+empty_dict = {}
+````
+
+## Accessing Values
+
+```python
+person["name"]          # 'Alice'
+person.get("age")       # 30
+person.get("gender", "N/A")  # 'N/A' if key doesn't exist
+```
+
+## Modifying Entries
+
+```python
+person["age"] = 31
+person["city"] = "London"   # Add new key
+```
+
+## Removing Entries
+
+```python
+del person["age"]
+person.pop("city")
+person.clear()              # Remove all items
+```
+
+## Dictionary Methods
+
+| Method           | Description                          |
+| ---------------- | ------------------------------------ |
+| `.keys()`        | Returns a view of keys               |
+| `.values()`      | Returns a view of values             |
+| `.items()`       | Returns view of key-value pairs      |
+| `.update(dict2)` | Merges `dict2` into current dict     |
+| `.pop(key)`      | Removes and returns the value of key |
+| `.get(key)`      | Returns value or `None` (or default) |
+
+## Looping Through a Dictionary
+
+```python
+for key in person:
+    print(key, person[key])
+
+for key, value in person.items():
+    print(key, value)
+```
+
+## Dictionary Comprehensions
+
+```python
+squares = {x: x*x for x in range(5)}  # {0: 0, 1: 1, ..., 4: 16}
+```
+
+## Nesting
+
+```python
+people = {
+    "alice": {"age": 30, "city": "NY"},
+    "bob": {"age": 25, "city": "LA"}
+}
+```
+
+---
+
+Reference: [Python dict Docs](https://docs.python.org/3/library/stdtypes.html#dict)
