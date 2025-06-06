@@ -52,7 +52,7 @@ df[(df['Age'] > 20) & (df['Age'] < 30)]
 ```python
 df['Age'] = df['Age'] + 1       
 df['NewCol'] = df['Age'] * 2    
-df['A'] = df['A'].replace({'AI': 'Artificial Intelligence'})
+df['Name'] = df['Name'].replace({'AI': 'Artificial Intelligence'})
 df.rename(columns={'Age': 'Years'}, inplace=True)
 df.drop('NewCol', axis=1, inplace=True)
 ```
