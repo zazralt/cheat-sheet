@@ -22,7 +22,8 @@ git config --global user.email "your.email@example.com"
 * **Pull** and Sync (update from github)
 
 ## Working with branches
-* Create a branch
+* Create a new branch
 * Write your code
-
-Here is a new line.
+* **Push** changes (upload to github)
+* Open a pull request
+* Merge pull request to main branch
