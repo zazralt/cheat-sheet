@@ -12,3 +12,12 @@ pip install git+https://github.com/<username>/<repository>.git@<branch>
 pip install git+https://github.com/<username>/<repository>.git@<commit_hash>
 
 ```
+
+
+```python
+import sys
+sys.path.append('/path/to/cloned/repo')
+
+from mypackage import mymodule
+
+```
