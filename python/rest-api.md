@@ -3,7 +3,7 @@
 
 # Flask Server
 
-# CRUD Operations
+# Request Methods
 
 ```python
 
