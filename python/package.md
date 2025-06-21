@@ -14,7 +14,7 @@ pip install git+https://github.com/<username>/<repository>.git@<commit_hash>
 
 ```
 
-## Import from local file
+## Import package from local file
 ```python
 import sys
 sys.path.append('/path/to/cloned/repo')
