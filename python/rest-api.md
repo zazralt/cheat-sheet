@@ -28,7 +28,7 @@ data = {'name': 'Zaz New'}
 response = requests.put(f'{BASE_URL}/put', headers=headers, json=data)
 
 # PATCH Request (update)
-patch_data = {'name': 'Zaz Updated'}
+data = {'name': 'Zaz Updated'}
 response = requests.patch(f'{BASE_URL}/patch', headers=headers, json=data)
 
 # DELETE Request
