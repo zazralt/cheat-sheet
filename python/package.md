@@ -2,6 +2,11 @@
 
 Links: [github actions](https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-python)
 
+## Installing a package
+```bash
+pip install {package}
+```
+
 ## Project structure
 ```
 your-package-name/
