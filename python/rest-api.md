@@ -26,12 +26,12 @@ data = {'name': 'Zaz'}
 response = requests.post(f'{BASE_URL}/users', headers=headers, data=json.dumps(data)
 print("POST response:", response.status_code, response.text)
 
-# PUT Request (replace)
+# PUT Request (create or update)
 data = {'name': 'Zaz'}
 response = requests.put(f'{BASE_URL}/users', headers=headers, data=json.dumps(data)
 print("POST response:", response.status_code, response.text)
 
-# PATCH Request (partial update)
+# PATCH Request (update)
 patch_data = {'name': 'Zaz Updated'}
 response = requests.patch(f'{BASE_URL}/users', headers=headers, data=json.dumps(patch_data)
 print("PATCH response:", response.status_code, response.text)
