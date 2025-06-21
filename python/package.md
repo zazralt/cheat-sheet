@@ -1,5 +1,26 @@
 # Python Package
 
+## Project structure
+```
+your-package-name/
+├── .git/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── pyproject.toml
+├── src/
+│   └── your_package/
+│       ├── __init__.py
+│       └── your_module.py
+├── tests/
+│   └── test_your_module.py
+```
+
+1 Create the pyproject.toml file with Metadata and build configuration.
+2 Write your python code in src/ folder.
+3 Push to github
+
+
 ## Install package from github
 ```bash
 
