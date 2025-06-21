@@ -27,5 +27,5 @@ git config --global user.email "your.email@example.com"
 * Make and save changes
 * **Commit** changes with message
 * **Push** changes (upload to github)
-* Create a pull request to main-branch
-* Merge pull request to main branch
+* Create a **pull request** to main-branch
+* **Merge** pull request to main branch
