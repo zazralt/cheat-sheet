@@ -29,4 +29,4 @@ git config --global user.email "your.email@example.com"
 * **Push** changes (upload to github)
 * Create a **pull request** to main-branch (Source Control ⌃⇧G)
 * **Merge** pull request to main branch
-* **Pull** and Sync from main branch(update from github)
+* **Pull** and Sync from main branch (update from github)
