@@ -24,3 +24,5 @@ git config --global user.email "your.email@example.com"
 ## Working with branches
 * Create a branch
 * Write your code
+
+Here is a new line.
