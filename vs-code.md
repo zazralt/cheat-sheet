@@ -18,7 +18,7 @@ git config --global user.email "your.email@example.com"
 * Clone a repository (⇧⌘P, Git: Clone)
 * Make and save changes
 * Commit changes with message
-* Push changes
+* Push changes (upload to github)
 * Pull and Sync (update from github)
 
 ## Working with branches
