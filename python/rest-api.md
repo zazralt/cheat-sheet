@@ -8,7 +8,6 @@
 ```python
 
 import requests
-import json
 
 # Base URL and Headers
 BASE_URL = 'https://api.example.com'
@@ -23,17 +22,17 @@ print("GET response:", response.json())
 
 # POST Request (create)
 data = {'name': 'Zaz'}
-response = requests.post(f'{BASE_URL}/users', headers=headers, data=json.dumps(data)
+response = requests.post(f'{BASE_URL}/users', headers=headers, json=data)
 print("POST response:", response.status_code, response.text)
 
 # PUT Request (create or update)
-data = {'name': 'Zaz'}
-response = requests.put(f'{BASE_URL}/users', headers=headers, data=json.dumps(data)
+data = {'name': 'Zaz New'}
+response = requests.put(f'{BASE_URL}/users', headers=headers, json=data)
 print("POST response:", response.status_code, response.text)
 
 # PATCH Request (update)
 patch_data = {'name': 'Zaz Updated'}
-response = requests.patch(f'{BASE_URL}/users', headers=headers, data=json.dumps(patch_data)
+response = requests.patch(f'{BASE_URL}/users', headers=headers, json=data)
 print("PATCH response:", response.status_code, response.text)
 
 # DELETE Request
