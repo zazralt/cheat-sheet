@@ -7,3 +7,6 @@
 * Clone a repository
 * Commit changes
 * Push changes
+
+Working with branches
+* Create a branch
