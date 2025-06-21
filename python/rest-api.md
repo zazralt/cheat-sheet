@@ -37,4 +37,7 @@ response = requests.delete(f'{BASE_URL}/delete', headers=headers)
 # view response content
 print(response.json())
 
+# view status code
+print(response.status_code)
+
 ```
