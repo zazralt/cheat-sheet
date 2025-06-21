@@ -13,7 +13,7 @@ import requests
 BASE_URL = 'https://api.example.com'
 headers = {
     'Authorization': 'Bearer YOUR_TOKEN',
-    'Content-Type': 'application/json'  # Ensure proper content-type for JSON APIs
+    'Content-Type': 'application/json'
 }
 
 # GET Request (read)
