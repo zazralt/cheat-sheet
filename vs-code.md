@@ -12,7 +12,7 @@ git config --global user.email "your.email@example.com"
 ```
 
 ## Configure VS code
-* Install extension (⇧⌘X) [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* Install extension (Extensions ⇧⌘X) [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * Login to github
 
 ## Working with GitHub
@@ -23,9 +23,10 @@ git config --global user.email "your.email@example.com"
 * **Pull** and Sync (update from github)
 
 ## Working with branches
-* Create and publish a new branch (⌃⇧G, Git: Create Branch)
+* Create and publish a new branch (Source Control ⌃⇧G, Git: Create Branch)
 * Make and save changes
 * **Commit** changes with message
 * **Push** changes (upload to github)
-* Create a **pull request** to main-branch
+* Create a **pull request** to main-branch (Source Control ⌃⇧G)
 * **Merge** pull request to main branch
+* **Pull** and Sync from main branch(update from github)
