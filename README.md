@@ -1,6 +1,7 @@
 # Cheat Sheet
 A collection of personal cheat sheets for the lookup of different code snippets.
 
+* [GitHub Cheat Sheet](github.md)
 * [Pandas Cheat Sheet](python/pandas.md)
 * [PySpark Cheat Sheet](python/pyspark.md)
 * [Python Cheat Sheet](python/python.md)
