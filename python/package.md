@@ -1,5 +1,7 @@
 # Python Package
 
+Links: [github actions](https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-python)
+
 ## Project structure
 ```
 your-package-name/
