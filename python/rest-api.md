@@ -10,33 +10,31 @@
 import requests
 
 # Base URL and Headers
-BASE_URL = 'https://api.example.com'
+BASE_URL = 'https://httpbin.org/'
 headers = {
     'Authorization': 'Bearer YOUR_TOKEN',
     'Content-Type': 'application/json'
 }
 
 # GET Request (read)
-response = requests.get(f'{BASE_URL}/data', headers=headers)
-print("GET response:", response.json())
+response = requests.get(f'{BASE_URL}/get', headers=headers)
 
 # POST Request (create)
 data = {'name': 'Zaz'}
-response = requests.post(f'{BASE_URL}/users', headers=headers, json=data)
-print("POST response:", response.status_code, response.text)
+response = requests.post(f'{BASE_URL}/post', headers=headers, json=data)
 
 # PUT Request (create or update)
 data = {'name': 'Zaz New'}
-response = requests.put(f'{BASE_URL}/users', headers=headers, json=data)
-print("POST response:", response.status_code, response.text)
+response = requests.put(f'{BASE_URL}/put', headers=headers, json=data)
 
 # PATCH Request (update)
 patch_data = {'name': 'Zaz Updated'}
-response = requests.patch(f'{BASE_URL}/users', headers=headers, json=data)
-print("PATCH response:", response.status_code, response.text)
+response = requests.patch(f'{BASE_URL}/patch', headers=headers, json=data)
 
 # DELETE Request
-response = requests.delete(f'{BASE_URL}/users', headers=headers)
-print("DELETE response:", response.status_code, response.text)
+response = requests.delete(f'{BASE_URL}/delete', headers=headers)
+
+# view response content
+print(response.json())
 
 ```
