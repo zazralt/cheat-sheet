@@ -16,9 +16,10 @@ your-package-name/
 │   └── test_your_module.py
 ```
 
-1 Create the pyproject.toml file with Metadata and build configuration.
-2 Write your python code in src/ folder.
-3 Push to github
+## Create a package in github
+1. Create the pyproject.toml file with Metadata and build configuration.
+2. Write your python code in src/ folder.
+3. Push to github.
 
 
 ## Install package from github
