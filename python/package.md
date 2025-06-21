@@ -22,3 +22,9 @@ sys.path.append('/path/to/cloned/repo')
 from mypackage import mymodule
 
 ```
+
+## Import dependency
+Add to requirements.txt:
+```
+git+https://github.com/<username>/<repository>.git@main
+```
