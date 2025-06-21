@@ -1,5 +1,18 @@
 # GitHub Cheat-Sheet
 
+## GitHub workflow steps
+* **Fork or clone** the repository
+* **Create a new branch** for your work
+* **Make changes** locally (code, edit, etc.)
+* **Stage and commit** your changes
+* **Pull latest changes** from the main branch (optional but recommended)
+* **Push your branch** to GitHub
+* **Open a pull request (PR)** on GitHub
+* **Participate in code review** and address feedback
+* **Merge the PR** once approved and checks pass
+* **Delete the branch** (local and remote, optional)
+* **Update your main branch** to stay in sync
+
 ## **Basic Git Configuration**
 
 ```bash
