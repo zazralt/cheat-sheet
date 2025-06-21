@@ -1,6 +1,6 @@
 # Python Package
 
-## Install from github
+## Install package from github
 ```bash
 
 # To install a package:
