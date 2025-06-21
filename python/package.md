@@ -28,3 +28,10 @@ Add to requirements.txt:
 ```
 git+https://github.com/<username>/<repository>.git@main
 ```
+
+## Publishing on PyPI
+
+```bash
+python -m build
+twine upload dist/*
+```
