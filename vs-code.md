@@ -23,7 +23,8 @@ git config --global user.email "your.email@example.com"
 * **Pull** and Sync (update from github)
 
 ## Working with branches
-* Create and publish a new branch (Source Control ⌃⇧G, Git: Create Branch)
+* Create a new branch (Source Control ⌃⇧G, Git: Create Branch)
+* **Publish** new branch
 * Make and save changes
 * **Commit** changes with message
 * **Push** changes (upload to github)
