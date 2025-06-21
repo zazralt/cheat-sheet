@@ -1,5 +1,6 @@
 # Python Package
 
+## Install from github
 ```bash
 
 # To install a package:
@@ -13,7 +14,7 @@ pip install git+https://github.com/<username>/<repository>.git@<commit_hash>
 
 ```
 
-
+## Import from local file
 ```python
 import sys
 sys.path.append('/path/to/cloned/repo')
