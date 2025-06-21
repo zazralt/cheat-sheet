@@ -1,6 +1,6 @@
 # GitHub Cheat-Sheet
 
-## 1. **Basic Git Configuration**
+## **Basic Git Configuration**
 
 ```bash
 git config --global user.name "Your Name"
@@ -8,7 +8,7 @@ git config --global user.email "you@example.com"
 git config --global core.editor "code --wait"
 ```
 
-## 2. **Repository Management**
+## **Repository Management**
 
 | Task                    | Command                                      |
 | ----------------------- | -------------------------------------------- |
@@ -17,7 +17,7 @@ git config --global core.editor "code --wait"
 | Add remote              | `git remote add origin <url>`                |
 | Check remotes           | `git remote -v`                              |
 
-## 3. **Staging & Committing**
+## **Staging & Committing**
 
 ```bash
 git status                  # Check changes
@@ -27,7 +27,7 @@ git commit -m "Message"    # Commit
 git commit -am "Message"   # Add & commit tracked files
 ```
 
-## 4. **Branching**
+## **Branching**
 
 ```bash
 git branch                 # List branches
@@ -37,7 +37,7 @@ git checkout -b <name>    # Create and switch
 git merge <branch>        # Merge branch into current
 ```
 
-## 5. **Pulling & Pushing**
+## **Pulling & Pushing**
 
 ```bash
 git pull                   # Fetch & merge
@@ -45,7 +45,7 @@ git push                   # Push to default remote/branch
 git push -u origin <branch>  # Push new branch
 ```
 
-## 6. **Tagging**
+## **Tagging**
 
 ```bash
 git tag <tagname>                   # Lightweight tag
@@ -53,7 +53,7 @@ git tag -a <tagname> -m "message"  # Annotated tag
 git push origin <tagname>          # Push tag
 ```
 
-## 7. **Undoing Changes**
+## **Undoing Changes**
 
 ```bash
 git restore <file>           # Discard uncommitted changes
@@ -61,7 +61,7 @@ git reset --hard HEAD        # Reset to last commit
 git revert <commit>          # Create new commit that undoes
 ```
 
-## 8. **Git Log & Diff**
+## **Git Log & Diff**
 
 ```bash
 git log                      # Show commit history
@@ -70,7 +70,7 @@ git diff                     # Show unstaged changes
 git diff --staged            # Staged changes
 ```
 
-## 9. **GitHub Specific**
+## **GitHub Specific**
 
 | Task                     | How-To                                                           |
 | ------------------------ | ---------------------------------------------------------------- |
@@ -80,7 +80,7 @@ git diff --staged            # Staged changes
 | GitHub Actions           | Automate workflows using `.github/workflows/*.yml`               |
 | Issues                   | Use Issues tab to report/track bugs, assign labels and assignees |
 
-## 10. **.gitignore File**
+## **.gitignore File**
 
 Add files or patterns to ignore:
 
@@ -91,7 +91,7 @@ node_modules/
 .DS_Store
 ```
 
-## 11. **Common Shortcuts (GitHub UI)**
+## **Common Shortcuts (GitHub UI)**
 
 | Feature           | Location                |
 | ----------------- | ----------------------- |
@@ -100,7 +100,7 @@ node_modules/
 | Branch Protection | Settings > Branches     |
 | Wiki              | "Wiki" tab (if enabled) |
 
-## 12. **GitHub CLI (Optional)**
+## **GitHub CLI (Optional)**
 
 ```bash
 gh auth login               # Authenticate
