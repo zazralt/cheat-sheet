@@ -10,38 +10,34 @@ pip install {package}
 ## Project structure
 ```
 your-package-name/
-├── .git/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml
-├── src/
+├── your_folder/
 │   └── your_package/
 │       ├── __init__.py
 │       └── your_module.py
-├── tests/
-│   └── test_your_module.py
 ```
 
 ## Create a package in github
-1. Create the `pyproject.toml` file containing the metadata and build configuration.
-2. Write your python code in the `src/` folder.
-3. Add unit tests.
-4. Push to github.
+1. Add your licence, e.g. MIT.
+2. Add your readme.
+3. Create the `pyproject.toml` file containing the metadata and build configuration.
+4. Write your python code in the `src/` folder.
+5. Edit `__init__.py` to expose your functions.
+6. Add unit tests.
+7. Push to github.
 
 
 ## Install package from github
 ```bash
-
-# To install a package:
 pip install git+https://github.com/<username>/<repository>.git
+```
 
-# To install a specific branch:
-pip install git+https://github.com/<username>/<repository>.git@<branch>
-
-# To install a specific commit:
-pip install git+https://github.com/<username>/<repository>.git@<commit_hash>
-
+## Import your package
+```
+from my_package import my_function
 ```
 
 ## Import package from local file
