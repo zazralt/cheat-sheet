@@ -14,10 +14,9 @@ your-package-name/
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml
-├── your_folder/
-│   └── your_package/
-│       ├── __init__.py
-│       └── your_module.py
+├── your_package/
+│   ├── __init__.py
+│   └── your_module.py
 ```
 
 ## Create a package in github
