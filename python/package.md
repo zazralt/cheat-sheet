@@ -42,9 +42,9 @@ your-package-name/
 
 ## Create a package in github
 1. Add your licence, e.g. MIT.
-2. Add your readme.
+2. Add your readme, e.g. what is it, how to use it.
 3. Create the `pyproject.toml` file containing the metadata and build configuration.
-4. Write your python code in the `src/` folder.
+4. Write your python code in the `your_package/` folder.
 5. Edit `__init__.py` to expose your functions.
 
 ## Import dependency
