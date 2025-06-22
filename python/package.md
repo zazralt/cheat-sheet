@@ -25,8 +25,6 @@ your-package-name/
 3. Create the `pyproject.toml` file containing the metadata and build configuration.
 4. Write your python code in the `src/` folder.
 5. Edit `__init__.py` to expose your functions.
-6. Add unit tests.
-7. Push to github.
 
 
 ## Install package from github
