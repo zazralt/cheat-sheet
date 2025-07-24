@@ -86,6 +86,16 @@ df.to_csv('output.csv', index=False)
 df.to_excel('output.xlsx', index=False)
 ```
 
+## Index
+
+```python
+df.index = df['column_name']
+df = df.set_index('column_name')
+df = df.set_index(['column1', 'column2'])
+df.set_index('column_name', inplace=True)
+```
+
+
 ---
 
 Reference: [Pandas Documentation](https://pandas.pydata.org/docs/)
