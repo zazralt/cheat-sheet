@@ -234,10 +234,16 @@ Reference: [pandas.json\_normalize() Docs](https://pandas.pydata.org/docs/refere
 
 ## Loops
 
-### For Loop
+### Loop Rows
 ```python
 for index, row in df.iterrows():
     print(row['col'])
+```
+
+### Loop Columns
+```python
+for col in df.columns:
+    print(df[col])
 ```
 
 ### Apply
@@ -248,8 +254,3 @@ def describe(row):
 df['description'] = df.apply(describe, axis=1)
 ```
 
-### Columns
-```python
-for col in df.columns:
-    print(df[col])
-```
