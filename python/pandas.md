@@ -228,3 +228,28 @@ df = json_normalize(data)
 ---
 
 Reference: [pandas.json\_normalize() Docs](https://pandas.pydata.org/docs/reference/api/pandas.json_normalize.html)
+
+
+---
+
+## Loops
+
+### For Loop
+```python
+for index, row in df.iterrows():
+    print(f"{row['name']} is {row['age']} years old.")
+```
+
+### Apply
+```python
+def describe(row):
+    return f"{row['name']} is {row['age']} years old."
+
+df['description'] = df.apply(describe, axis=1)
+```
+
+### Columns
+```python
+for col in df.columns:
+    print(df[col])
+```
