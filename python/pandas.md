@@ -237,7 +237,7 @@ Reference: [pandas.json\_normalize() Docs](https://pandas.pydata.org/docs/refere
 ### For Loop
 ```python
 for index, row in df.iterrows():
-    print(f"{row['name']} is {row['age']} years old.")
+    print(row['col'])
 ```
 
 ### Apply
