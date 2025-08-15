@@ -1,8 +1,7 @@
 ## Installing a YAML Library
 
 ```bash
-pip install pyyaml         # Standard library
-pip install ruamel.yaml    # Preserve formatting & comments
+pip install pyyaml
 ```
 
 ---
@@ -10,7 +9,7 @@ pip install ruamel.yaml    # Preserve formatting & comments
 ## Importing YAML
 
 ```python
-import yaml  # For PyYAML
+import yaml
 ```
 
 ---
@@ -89,22 +88,11 @@ docs = list(yaml.safe_load_all(yaml_text))
 
 ---
 
-## Handling Custom Types
-
-```python
-class EnvVar(str): pass
-
-def envvar_constructor(loader, node):
-    return EnvVar(loader.construct_scalar(node))
-
-yaml.SafeLoader.add_constructor('!env', envvar_constructor)
-
-cfg = yaml.safe_load("path: !env ${HOME}/data")
-```
-
----
-
 ## Preserving Formatting & Comments (ruamel.yaml)
+
+```bash
+pip install ruamel.yaml    # Preserve formatting & comments
+```
 
 ```python
 from ruamel.yaml import YAML
