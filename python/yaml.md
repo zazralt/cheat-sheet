@@ -17,7 +17,7 @@ import yaml
 ## Convert YAML to Dict (Deserialization)
 
 ```python
-# Load from YAML string
+# Load dict from YAML string
 yaml_str = """
 name: Alice
 age: 30
@@ -29,7 +29,7 @@ data = yaml.safe_load(yaml_str)
 ```
 
 ```python
-# Load from YAML file
+# Load dict from YAML file
 with open("data.yml", "r") as f:
     data = yaml.safe_load(f)
 ```
@@ -39,13 +39,13 @@ with open("data.yml", "r") as f:
 ## Convert Dict to YAML (Serialization)
 
 ```python
-# Python dict to YAML string
+# Convert dict to YAML string
 data = {"name": "Alice", "age": 30, "skills": ["Python", "YAML"]}
 yaml_str = yaml.safe_dump(data)
 ```
 
 ```python
-# Save to YAML file
+# Save dict to YAML file
 with open("data.yml", "w") as f:
     yaml.safe_dump(data, f)
 ```
