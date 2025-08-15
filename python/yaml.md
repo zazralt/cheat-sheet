@@ -31,7 +31,7 @@ data = yaml.load(yaml_str)
 ```python
 # Load dict from YAML file
 with open("data.yml", "r") as f:
-    data = yaml.load(f)
+    data = yaml.safe_load(f)
 ```
 
 ---
@@ -75,6 +75,6 @@ name: Alice
 ---
 name: Bob
 """
-docs = list(yaml.load_all(yaml_text))
+docs = list(yaml.safe_load_all(yaml_text))
 ```
 ---
