@@ -25,7 +25,7 @@ skills:
   - Python
   - YAML
 """
-data = yaml.load(yaml_str)
+data = yaml.safe_load(yaml_str)
 ```
 
 ```python
