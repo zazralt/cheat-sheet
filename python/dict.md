@@ -161,3 +161,73 @@ inv = {v: k for k, v in d.items()}
 # Initialize with same value
 d = dict.fromkeys(["a", "b", "c"], 0)
 ```
+---
+
+## Looping Through Dictionaries
+
+### Loop Over Keys
+
+```python
+for key in d:
+    print(key, d[key])
+```
+
+Equivalent to:
+
+```python
+for key in d.keys():
+    print(key, d[key])
+```
+
+---
+
+### Loop Over Values
+
+```python
+for value in d.values():
+    print(value)
+```
+
+---
+
+### Loop Over Key–Value Pairs
+
+```python
+for key, value in d.items():
+    print(f"{key} => {value}")
+```
+
+---
+
+### Loop with Index (Enumerate)
+
+```python
+for i, (key, value) in enumerate(d.items()):
+    print(i, key, value)
+```
+
+---
+
+### Nested Dictionaries
+
+```python
+nested = {
+    "person1": {"name": "Alice", "age": 25},
+    "person2": {"name": "Bob", "age": 30}
+}
+
+for person, info in nested.items():
+    for k, v in info.items():
+        print(person, k, v)
+```
+
+---
+
+### Dictionary Comprehensions (Loop + Build New Dict)
+
+```python
+# Square values
+d = {"a": 1, "b": 2, "c": 3}
+squares = {k: v**2 for k, v in d.items()}
+# {'a': 1, 'b': 4, 'c': 9}
+```
