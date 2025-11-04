@@ -258,3 +258,12 @@ WHERE {
 
 Reference: [W3C SPARQL Functions](https://www.w3.org/TR/sparql11-query/#funcs)
 
+# Additional
+
+## DROP GRAPH
+
+To remove the graph completely (including the graph name itself):
+
+```sparql
+DROP GRAPH <http://example.org/graph-name>
+```
